@@ -1,4 +1,4 @@
-.page-header{
+.page-header {
   background-color: #ff9400 ;
   margin-top: 0;
   padding : 20px 20px 20px 40px ;
@@ -13,23 +13,26 @@
   margin-left: 40px;
 }
 h1, h2, h3, h4{
-  font-family: 'Tangerine', 'Inconsolata' , 'Droid Sans', 'Serif';
+  font-family: 'Tangerine', 'Inconsolata' , 'Droid Sans', serif;
   font-size: 48px;
 }
-.date p{
+.date {
   color: #828282;
 }
-.post{
 
-  margin-bottom: 70px;
+.post{
+    margin-bottom: 70px;
 }
 .post h1 a{
-  color: black;
+  color: #000000;
 }
 
 .post-form-blog textarea {
   width: 100%;
 }
 .post-form-blog btn-primary {
+  float: right;
+}
+.fontawesome{
   float: right;
 }
