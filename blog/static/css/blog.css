@@ -20,21 +20,30 @@ h1, h2, h3, h4{
   color: #828282;
 }
 
-.post{
-    margin-bottom: 70px;
-}
-.post h1 a{
-  color: #000000;
-}
-
 .post-form-blog textarea {
   width: 100%;
 }
-.post-form-blog btn-primary {
+.post-form-blog .btn-primary {
   float: right;
 }
-.top-menu a{
-  font-size: 50pt;
-  float: right;
-  
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu a{
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a {
+    color: #000000;
 }
