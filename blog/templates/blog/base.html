@@ -21,7 +21,7 @@
           Hello, {{ user.username }}<a href="{% url 'logout' %}" class="top-menu" ><small>(Log out)</small></a></p>
 
       {% else %}
-          <a href="{% url 'login' %} " class="top-menu" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+          <p class="top-menu">Login</p><a href="{% url 'login' %} " class="top-menu" title="Login"><i class="fas fa-sign-in-alt"></i></a>
       {% endif %}
       <h1><a href="/" title="Home Page">Cool Kids Blog </a><i class="fas fa-blog"></i></h1>
 
