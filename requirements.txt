@@ -1,5 +1,6 @@
 certifi==2018.11.29
 Django==2.1
+django-crispy-forms==1.7.2
 Markdown==3.0.1
 mistune==0.8.4
 Pigments==1.6
