@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="{% static 'css/zenburn.css' %}">
+
   </head>
   <body>
     <div class="page-header">
       {% if user.is_authenticated %}
           <p class="top-menu">
-          <a href="{% url 'post_draft_list' %}" class="top-menu" title="Add a draft"><i class="fab fa-firstdraft" ></i></a>
+          <a href="{% url 'post_draft_list' %}" class="top-menu" title="Drafts"><i class="fab fa-firstdraft" ></i></a>
           <a href="{% url 'post_new' %} " class="top-menu" title="Create a blog"><i class="fas fa-plus" ></i></a>
           Hello, {{ user.username }}<a href="{% url 'logout' %}" class="top-menu" ><small>(Log out)</small></a></p>
 
       {% else %}
-          <p class="top-menu">Login</p><a href="{% url 'login' %} " class="top-menu" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+      <p class="top-menu"><small>(Login)</small><a href="{% url 'login' %} " class="top-menu" title="Login" >
+            <i class="fas fa-sign-in-alt fa-2x"></i></a></p>
       {% endif %}
       <h1><a href="/" title="Home Page">Cool Kids Blog </a><i class="fas fa-blog"></i></h1>
 
