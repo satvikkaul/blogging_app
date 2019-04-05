@@ -9,7 +9,7 @@
                 <small>{{ post.published_date }}</small>
             </div>
             {% else %}
-                  <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-primary" style="float:right; margin-top:120px;">Publish</a>
+                  <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-primary" style="float:right; margin-top:5px">Publish</a>
         {% endif %}
 
         {% if user.is_authenticated %}
