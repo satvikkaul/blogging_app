@@ -125,4 +125,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+STATIC_ROOT = '/users/satvi/documents/django/blogging_app/blog/static'
