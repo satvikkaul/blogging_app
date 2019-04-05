@@ -6,14 +6,16 @@
     <div class="post">
         {% if post.published_date %}
             <div class="date">
-                <small>{{ post.published_date }}</small>
+                <small> author: {{ post.author }} {{ post.published_date }}</small>
             </div>
             {% else %}
                   <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-primary" style="float:right; margin-top:5px">Publish</a>
         {% endif %}
 
         {% if user.is_authenticated %}
-          <a href="{% url 'post_edit' pk=post.pk %}" title="Edit this post"><i class="far fa-edit fa-2x" style="color: #339af0; float:right; margin:5px"></i></a>
+          {% if post.author == user %}
+              <a href="{% url 'post_edit' pk=post.pk %}" title="Edit this post"><i class="far fa-edit fa-2x" style="color: #339af0; float:right; margin:5px"></i></a>
+          {% endif %}
         {% endif %}
 
         {% if post.author == user %}
